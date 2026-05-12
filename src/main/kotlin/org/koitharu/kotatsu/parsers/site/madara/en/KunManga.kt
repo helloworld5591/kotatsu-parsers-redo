@@ -10,7 +10,7 @@ import org.koitharu.kotatsu.parsers.site.madara.MadaraParser
 internal class KunManga(context: MangaLoaderContext) :
 	MadaraParser(context, MangaParserSource.KUNMANGA, "kunmanga.com", 10) {
 
-	override val headers: Headers = Headers.Builder()
+	val headers: Headers = Headers.Builder()
 		.add(
 			"User-Agent",
 			"Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
